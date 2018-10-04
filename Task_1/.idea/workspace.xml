@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61bf64a7-2d6f-43f2-b6f4-c8cd5b092bf8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tai/controllers/auth/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tai/controllers/auth/Secured.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/tai/controllers/data/DataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ind_login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ind_register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lect04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lect04/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="61bf64a7-2d6f-43f2-b6f4-c8cd5b092bf8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +14,7 @@
     <session id="586560283">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.opened" value="2" />
@@ -73,7 +65,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/tai/controllers/data/DataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="416">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -279,7 +271,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538465667344" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538465892282" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -390,7 +382,7 @@
       <option name="presentableId" value="Default" />
       <updated>1538042931783</updated>
       <workItem from="1538379026718" duration="19339000" />
-      <workItem from="1538423299880" duration="4467000" />
+      <workItem from="1538423299880" duration="4705000" />
     </task>
     <servers />
   </component>
@@ -400,7 +392,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23806000" />
+    <option name="totallyTimeSpent" value="24044000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,7 +418,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.27435064" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30194804" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.30194804" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
@@ -675,7 +667,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/tai/controllers/data/DataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="416">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
