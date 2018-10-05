@@ -98,13 +98,13 @@ public class AuthController {
         // выводим сообщение об ошибке
         if (!res){
             log.info("Пользователь с таким именем уже зарегистрирован!");
-            return Response.status(409).entity("Пользователь с таким именем уже зарегистрирован!\n\n").build();
+            return Response.status(409).entity("Пользователь с таким именем уже зарегистрирован!").build();
         }
 
         // Если пользователь успешно добавлен, то формируем тело ответа с HTTP кодом 200 - OK и
         // выводим сообщение об успехе
         log.info("Пользователь успешно зарегистрирован: name= " + name + " pass= " + password);
-        return Response.status(200).entity("Пользователь успешно зарегистрирован! \n\n").build();
+        return Response.status(200).entity("Пользователь успешно зарегистрирован!").build();
     }
 
 
@@ -124,7 +124,7 @@ public class AuthController {
 
         if (user == null|| (!(user.getName().equals(name) && user.getPasswoord().equals(password)))){
             log.info("Введено не верное имя пользователя или пароль!");
-            return Response.status(401).entity("Введено не верное имя пользователя или пароль!\n\n").build();
+            return Response.status(401).entity("Введено не верное имя пользователя или пароль!").build();
         }
 
         Token token = null;
@@ -146,13 +146,14 @@ public class AuthController {
     @Secured
     public Response logout(@HeaderParam("Authorization") String header) {
         String tokenStr = header.substring("Bearer".length()).trim();
+
         Token token = new Token(Long.parseLong(tokenStr));
 
         boolean res = tokenAndUserRepository.deleteUserByToken(token);
 
         if (!res){
-            log.info("Токен не был удален, так как предбявлен не существующий токен!");
-            return Response.status(200).entity("Токен не был удален, так как предъявлен не существующий токен!").build();
+            log.info("Пользователь не был удален, так как преъявлен не существующий токен!");
+            return Response.status(409).entity("Пользователь не был удален, так как предъявлен не существующий токен!").build();
         }
 
         log.info("Поьзователь вышел из системы!");
