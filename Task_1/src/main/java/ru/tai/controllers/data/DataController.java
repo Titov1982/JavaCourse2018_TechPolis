@@ -6,16 +6,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import ru.tai.controllers.auth.AuthController;
-import ru.tai.model.Token;
-import ru.tai.model.User;
-import ru.tai.servise.TokenAndUserRepository;
+import ru.tai.servise.TokenAndUserRepositoryInMemory;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
-import java.util.Map;
+import javax.ws.rs.core.Response;
 
 @Controller
 @Path("/data")
@@ -27,14 +23,20 @@ public class DataController {
      *  Внедряем репозиторий с токенами, где будут храниться токены зарегистрированных пользователей
      */
     @Autowired
-    TokenAndUserRepository tokenAndUserRepository;
+    TokenAndUserRepositoryInMemory tokenAndUserRepository;
 
     @GET
     @Path("/users")
     @Produces(MediaType.APPLICATION_JSON_VALUE + "; charset=UTF-8")
-    public String users(){
+//    public String users(){
+//
+//        log.info(tokenAndUserRepository.toString());
+//        return tokenAndUserRepository.toString();
+//    }
+    public Response users(){
 
         log.info(tokenAndUserRepository.toString());
-        return tokenAndUserRepository.toString();
+
+        return Response.status(200).entity(tokenAndUserRepository.toString()).build();
     }
 }

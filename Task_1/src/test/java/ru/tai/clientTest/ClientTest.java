@@ -1,4 +1,4 @@
-package ru.tai;
+package ru.tai.clientTest;
 
 import static org.junit.Assert.assertTrue;
 
@@ -96,7 +96,7 @@ public class ClientTest {
         Response responseUsers =  client.viewOnline();
         String bodyMessage = responseUsers.body().string();
         log.info("Ответ на запрос пользователей: " + responseUsers.toString());
-        log.info("Список залогиненных пользователей: " +bodyMessage);
+        log.info("Список залогиненных пользователей: " + bodyMessage);
 
         Assert.assertTrue(responseUsers.code() == 200 &&
                 bodyMessage.equals("{\"users\" : [{aaa}]}"));

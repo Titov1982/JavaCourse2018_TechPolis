@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 
 import ru.tai.model.Token;
 import ru.tai.model.User;
-import ru.tai.servise.TokenAndUserRepository;
+import ru.tai.servise.TokenAndUserRepositoryInMemory;
 import ru.tai.servise.UserRepository;
 import ru.tai.util.Util;
 
@@ -41,7 +41,7 @@ public class AuthController {
     UserRepository userRepository;
 
     @Autowired
-    TokenAndUserRepository tokenAndUserRepository;
+    TokenAndUserRepositoryInMemory tokenAndUserRepository;
 
 
     /**

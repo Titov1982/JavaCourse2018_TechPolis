@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import ru.tai.model.Token;
-import ru.tai.servise.TokenAndUserRepository;
+import ru.tai.servise.TokenAndUserRepositoryInMemory;
 import ru.tai.servise.UserRepository;
 
 import javax.annotation.Priority;
@@ -41,7 +41,7 @@ public class AuthFilter implements ContainerRequestFilter {
      *  Внедряем репозиторий с токенами, где будут храниться токены зарегистрированных пользователей
      */
     @Autowired
-    TokenAndUserRepository tokenAndUserRepository;
+    TokenAndUserRepositoryInMemory tokenAndUserRepository;
 
 
     @Override
